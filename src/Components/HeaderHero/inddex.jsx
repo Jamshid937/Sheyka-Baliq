@@ -7,9 +7,7 @@ import Ellipse from '../../Imgs/Ellipse.png'
 const HeaderHero = () => {
   return (
     <div className='headderHeroBack'>
-      <Container>
-
-      
+      <Container>      
         <div className='headerHero'>
          <div className='headerHero__box'>
             <h1 className='headerHero__box__title'>Ishtaha ochar mazzali Baliqlar</h1>

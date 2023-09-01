@@ -1,9 +1,13 @@
 import React,{ useState } from 'react'
 import { FaStar } from 'react-icons/fa'
 import Container from '../../layout/container'
-import menu from '../../Imgs/menu.png'
 import check from '../../Imgs/check.png'
 import buyurtma from '../../Imgs/buyurtma.png'
+import togora from '../../Imgs/togora.jpg'
+import toyga from '../../Imgs/toyga.jpg'
+import toyga3 from '../../Imgs/toyga3.jpg'
+import toyga4 from '../../Imgs/toyga4.jpg'
+
 import './buyurtma.css'
 const Buyurtma = () => {
     const [ratingOne, setRatingOne] = useState(null)
@@ -13,7 +17,7 @@ const Buyurtma = () => {
           <h2 className='buyurtma__title'>To’y va marosimlar uchun buyurtma</h2>
           <div className='buyurtma'>
            <div className="buyurtma__card">
-             <img src={menu} alt="" />
+             <img src={toyga4} alt="" />
              <p>Qovurilga sazan baliq</p>
              <p><span>1kg:</span>50 000 so’m</p>
              <div className="menu__star">
@@ -38,7 +42,7 @@ const Buyurtma = () => {
              </div>
            </div>
            <div className="buyurtma__card">
-             <img src={menu} alt="" />
+             <img src={toyga3} alt="" />
              <p>Qovurilga sazan baliq</p>
              <p><span>1kg:</span>50 000 so’m</p>
              <div className="menu__star">
@@ -63,7 +67,7 @@ const Buyurtma = () => {
              </div>
            </div>
            <div className="buyurtma__card">
-             <img src={menu} alt="" />
+             <img src={togora} alt="" />
              <p>Qovurilga sazan baliq</p>
              <p><span>1kg:</span>50 000 so’m</p>
              <div className="menu__star">
@@ -88,7 +92,7 @@ const Buyurtma = () => {
              </div>
            </div>
            <div className="buyurtma__card">
-             <img src={menu} alt="" />
+             <img src={toyga} alt="" />
              <p>Qovurilga sazan baliq</p>
              <p><span>1kg:</span>50 000 so’m</p>
              <div className="menu__star">

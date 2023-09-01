@@ -20,6 +20,10 @@ padding: 10px;
 border-radius: 10px;
 background: #FFF;
 }
+.menu__card>img{
+width: 280px;
+height: 237px;
+}
 .menu__card :nth-child(2){
     color: #003D36;
     font-family: 'Inter';

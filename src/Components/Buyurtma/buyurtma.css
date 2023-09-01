@@ -12,6 +12,10 @@
     border-radius: 10px;
     background: #003D36;
 }
+.buyurtma__card>img{
+width: 280px;
+height: 237px;
+}
 .buyurtma__card :nth-child(2){
     color: #EBFFFD;
     font-family: 'Inter';
