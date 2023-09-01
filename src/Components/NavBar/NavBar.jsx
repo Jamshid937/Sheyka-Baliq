@@ -77,7 +77,7 @@ function NavBar() {
             </li>
           </ul>
           <div className='nav-item__phone'>
-            <a href="tel:998909420301">
+            <a href="tel:+998998088989">
               <img src={phone} alt="" />
               <p>
                 +998 (99) 808 89 89
