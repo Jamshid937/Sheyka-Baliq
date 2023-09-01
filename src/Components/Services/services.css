@@ -1,0 +1,41 @@
+.servicesBack{
+    background: #2F6660;
+}
+.services__title{
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+}
+.services{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.services__info{
+    color: #C8C8C8;
+    font-family: 'Inter';
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    max-width: 426px;
+    width: 100%;
+}
+
+@media screen and (max-width:840px) {
+    .services{
+    flex-direction: column;
+    }
+    .services__title{
+    font-size: 40px;
+    }
+}
+@media screen and (max-width:550px) {
+    .services__img>img{
+       width: 350px;
+    }
+}

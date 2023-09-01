@@ -1,0 +1,52 @@
+.menu__star>label>input{
+display: none;
+}
+.menu__title{
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+}
+.menu__back{
+    background: #2F6660;
+    padding-bottom: 100px;
+}
+.menu__card{
+background-color: #FFF;
+padding: 10px;
+border-radius: 10px;
+background: #FFF;
+}
+.menu__card :nth-child(2){
+    color: #003D36;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.menu__card :nth-child(3){
+    color: #E0411E;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.menu__card>p>span{
+    color: #000;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.menu{
+display: flex;
+flex-wrap: wrap;
+gap: 48px;
+justify-content: center;
+}

@@ -1,0 +1,96 @@
+.validate{
+    border-radius: 25px;
+    background: #2F6660;
+    padding-bottom: 20px;
+    margin-top: 98px;
+}
+.validate>h2{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 709px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+.validate>p{
+    color: #BFBFBF;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.validate__form{
+    border-radius: 15px;
+    background: #FFF;
+display: flex;
+justify-content: center;
+align-items: center;
+max-width: 850px;
+width: 90%;
+height: 90px;
+margin: 0 auto;
+}
+.validate__form>form>input{
+border: none;
+}
+.validate__form>form>button{
+    border-radius: 5px;
+    background: #E0411E;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    max-width: 163px;
+    width: 100%;
+}
+.validate__form>form{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.validate__form>form>input{
+    color: #999;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+@media screen and (max-width:580px) {
+    .validate{
+    margin-top: 98px;
+    }
+    .validate__form>form{
+    flex-direction: column;
+    }
+    .validate__form>form>button{
+    margin: 0 auto;
+    }
+    .validate{
+    margin: 0 15px;
+    margin-top: 98px;
+    }
+}
+@media screen and (max-width:376px) {
+    .validate>h2{
+    font-size: 30px;
+    }
+    .validate>p{
+        font-size: 18px;
+        }
+}

@@ -1,0 +1,109 @@
+.buyurtma__title{
+    color: #003D36;
+    font-family: 'Inter';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+}
+.buyurtma__card{
+    padding: 10px;
+    border-radius: 10px;
+    background: #003D36;
+}
+.buyurtma__card :nth-child(2){
+    color: #EBFFFD;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.buyurtma__card :nth-child(3){
+    color: #E0411E;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.buyurtma__card>p>span{
+    color: #000;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.buyurtma{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 48px;
+}
+
+.buyurtma__bottom>h2{
+    color: #000;
+    font-family: 'Inter';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 702px;
+    width: 100%;
+   
+}
+.buyurtma__bottom__box{
+display: flex;
+justify-content: space-between;
+padding: 0 15px;
+}
+.buyurtma__bottom__box__info>p{
+    color: #000;
+    font-family: 'Inter';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 434px;
+    width: 100%;
+}
+.checked{
+display: flex;
+gap: 20px;
+}
+.checked>p{
+    color: #333;
+    font-family: 'Inter';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+@media screen and (max-width:950px) {
+.buyurtma__bottom__box{
+flex-direction: column;
+align-items: center;
+}
+}
+@media screen and (max-width:684px) {
+    .buyurtma__bottom>h2{
+    font-size: 45px;
+    }
+}
+@media screen and (max-width:515px) {
+    .buyurtma__bottom>h2{
+    font-size: 31px;
+    }
+}
+@media screen and (max-width:580px) {
+.buyurtma__bottom__box__img{
+display: none;
+}
+}
+@media screen and (max-width:557px) {
+    .buyurtma__title{
+    font-size: 35px;
+    }
+}
