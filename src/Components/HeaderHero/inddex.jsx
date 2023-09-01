@@ -1,30 +1,34 @@
 import React from 'react'
 import Container from '../../layout/container'
+import { useTranslation } from 'react-i18next';
+
 import './HeaderHero.css'
 import istockphoto from '../../Imgs/istockphoto.png'
 import svejiy from '../../Imgs/svejiy.png'
 import Ellipse from '../../Imgs/Ellipse.png'
 const HeaderHero = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <div className='headderHeroBack'>
       <Container>      
         <div className='headerHero'>
          <div className='headerHero__box'>
-            <h1 className='headerHero__box__title'>Ishtaha ochar mazzali Baliqlar</h1>
-            <p className='headerHero__box__text'>Pishirilgan baliqlar dasturxoningizda,to’y va marosimlarda hozir u nozir</p>
+            <h1 className='headerHero__box__title'>{t('h')}</h1>
+            <p className='headerHero__box__text'>{t('p13')}</p>
 
             <div className='headerHero__box__card'>
               <img src={svejiy} alt="" />
               <div className='headerHero__box__card__info'>
-                <h4 className='headerHero__box__card__info__title'>Yangi so’yilgan</h4>
-                <p className='headerHero__box__card__info__text'>Bizning baliqlar toza suvda boqilgan va yangi pishirilgan</p>
+                <h4 className='headerHero__box__card__info__title'>{t('p9')}</h4>
+                <p className='headerHero__box__card__info__text'>{t('p6')}</p>
               </div>
             </div>
             <div className='headerHero__box__card'>
               <img src={Ellipse} alt="" />
               <div className='headerHero__box__card__info'>
-                <h4 className='headerHero__box__card__info__title'>To’y va marosimlar</h4>
-                <p className='headerHero__box__card__info__text'>Biz katta marosimlar va burutmalrni ham qabul qilamiz</p>
+                <h4 className='headerHero__box__card__info__title'>{t('p10')}</h4>
+                <p className='headerHero__box__card__info__text'>{t('p7')}</p>
               </div>
             </div>
          </div>

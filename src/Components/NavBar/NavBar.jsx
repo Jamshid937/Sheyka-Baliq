@@ -1,16 +1,16 @@
 import React from 'react'
 import './NavBar.css'
-// import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import phone from '../../Imgs/phone.png'
 import logo from '../../Imgs/logo.png'
 function NavBar() {
-  // const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
 
 
-  // function TranslationFunc(e) {
-  //   i18n.changeLanguage(e.target.value)
-  // }
+  function TranslationFunc(e) {
+    i18n.changeLanguage(e.target.value)
+  }
   const [click, setClick] = React.useState(false);
   const [navBar] = React.useState(false)
   const handleClick = () => setClick(!click);
@@ -32,44 +32,44 @@ function NavBar() {
                 className="nav-links"
                 onClick={click ? handleClick : null}
               >
-               Biz haqimizda
+               {t('li1')}
               </a>
             </li>
             <li className="nav-item">
               <a
                 exact
-                href="#servic"
+                href="#menyu"
                 activeClassName="active"
                 className="nav-links"
                 onClick={click ? handleClick : null}
               >
-                Menyu
+                {t('li2')}
               </a>
             </li>
             <li className="nav-item">
               <a
                 exact
-                href="#footer"
+                href="#marosimlar"
                 activeClassName="active"
                 className="nav-links"
                 onClick={click ? handleClick : null}
               >
-                To‘y va marosimlar uchun 
+                {t('li3')}
               </a>
             </li>
             <li className="nav-item">
               <a
                 exact
-                href="#footer"
+                href="#input"
                 activeClassName="active"
                 className="nav-links"
                onClick={click ? handleClick : null}
               >
-                Yetkazib berish
+                {t('li4')}
               </a>
             </li>
             <li>
-              <select className='nav-item_select__bar'>
+              <select className='nav-item_select__bar' onChange={TranslationFunc}>
                 <option value="uz" className='nav-item_select__option'>O`z</option>
                 <option value="en" className='nav-item_select__option'>En</option>
                 <option value="ru" className='nav-item_select__option'>RU</option>
@@ -84,7 +84,7 @@ function NavBar() {
               </p>
             </a>
 
-            <select className='nav-item_select'>
+            <select className='nav-item_select' onChange={TranslationFunc}>
               <option value="uz" className='nav-item_select__option' >O`z</option>
               <option value="en" className='nav-item_select__option'>En</option>
               <option value="ru" className='nav-item_select__option'>RU</option>

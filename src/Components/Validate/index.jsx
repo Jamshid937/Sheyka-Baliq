@@ -1,17 +1,20 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
+
 import Container from '../../layout/container'
 import './validate.css'
 const Validate = () => {
+  const { t, i18n } = useTranslation();
   return (
     <Container>
-      <div className="validate">
-        <h2>Telefon raqamingizni qoldiring biz siz bilan aloqaga chiqamiz</h2>
-        <p>Bizning raqam:+998 90 809 89 89</p>
+      <div className="validate" id='input' >
+        <h2><p>{t('h7')}</p></h2>
+        <p><p>{t('h9')}</p></p>
 
         <div className='validate__form'>
             <form>
                 <input type="tel" placeholder='999 99 999 99 99'/>
-                <button>Tasdiqlash</button>
+                <button><p>{t('btn')}</p></button>
             </form>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next';
 import { FaStar } from 'react-icons/fa'
 import Container from '../../layout/container'
 import menu from '../../Imgs/menu.png'
@@ -11,6 +12,8 @@ import toyga3 from '../../Imgs/toyga3.jpg'
 import toyga4 from '../../Imgs/toyga4.jpg'
 import './menu.css'
 const Menu = () => {
+  const { t, i18n } = useTranslation();
+
   const [ratingOne, setRatingOne] = useState(null)
   const [hoverOne, setHoverOne] = useState(null)
   const [ratingTwo, setRatingTwo] = useState(null)
@@ -29,13 +32,13 @@ const Menu = () => {
   const [hoverEat, setHoverEat] = useState(null)
   return (
     
-<div className="menu__back">
+<div className="menu__back" id='menyu'>
     <Container>
-       <h2 className='menu__title'>Menue</h2>
+       <h2 className='menu__title'>{t('h3')}</h2>
        <div className='menu'>
            <div className="menu__card">
              <img src={menu} alt="" />
-             <p>Qovurilga sazan baliq</p>
+             <p>{t('li')}</p>
              <p><span>1kg:</span>80 000 so’m</p>
              <div className="menu__star">
              {[...Array(5)].map((star, index) => {
@@ -60,7 +63,7 @@ const Menu = () => {
            </div>
            <div className="menu__card">
              <img src={sazan} alt="" />
-             <p>Qovurilga sazan baliq</p>
+             <p>{t('li')}</p>
              <p><span>1kg:</span>75 000 so’m</p>
              <div className="menu__star">
              {[...Array(5)].map((star, index) => {
@@ -85,7 +88,7 @@ const Menu = () => {
            </div>
            <div className="menu__card">
              <img src={menu} alt="" />
-             <p>Qovurilga sazan baliq</p>
+             <p>{t('li')}</p>
              <p><span>1kg:</span>50 000 so’m</p>
              <div className="menu__star">
              {[...Array(5)].map((star, index) => {
@@ -110,7 +113,7 @@ const Menu = () => {
            </div>
            <div className="menu__card">
              <img src={togora} alt="" />
-             <p>Qovurilga sazan baliq</p>
+             <p>{t('li')}</p>
              <p><span>1kg:</span>50 000 so’m</p>
              <div className="menu__star">
              {[...Array(5)].map((star, index) => {
@@ -135,7 +138,7 @@ const Menu = () => {
            </div>
            <div className="menu__card">
              <img src={toyga} alt="" />
-             <p>Qovurilga sazan baliq</p>
+             <p>{t('li')}</p>
              <p><span>1kg:</span>50 000 so’m</p>
              <div className="menu__star">
              {[...Array(5)].map((star, index) => {
@@ -160,7 +163,7 @@ const Menu = () => {
            </div>
            <div className="menu__card">
              <img src={toyga2} alt="" />
-             <p>Qovurilga sazan baliq</p>
+             <p>{t('li')}</p>
              <p><span>1kg:</span>50 000 so’m</p>
              <div className="menu__star">
              {[...Array(5)].map((star, index) => {
@@ -185,7 +188,7 @@ const Menu = () => {
            </div>
            <div className="menu__card">
              <img src={toyga3} alt="" />
-             <p>Qovurilga sazan baliq</p>
+             <p>{t('li')}</p>
              <p><span>1kg:</span>50 000 so’m</p>
              <div className="menu__star">
              {[...Array(5)].map((star, index) => {
@@ -210,7 +213,7 @@ const Menu = () => {
            </div>
            <div className="menu__card">
              <img src={toyga4} alt="" />
-             <p>Qovurilga sazan baliq</p>
+             <p>{t('li')}</p>
              <p><span>1kg:</span>50 000 so’m</p>
              <div className="menu__star">
              {[...Array(5)].map((star, index) => {

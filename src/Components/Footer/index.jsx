@@ -1,10 +1,14 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
+
 import Container from '../../layout/container'
 import logo from '../../Imgs/logo.png'
 import phoneFooter from '../../Imgs/phoneFooter.png'
 import location from '../../Imgs/location.png'
 import './footer.css'
 const Footer = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <Container>
        <div className='footer'>
@@ -23,7 +27,7 @@ const Footer = () => {
                 className="nav-links"
           
               >
-               Biz haqimizda
+               {t('li1')}
               </a>
             </li>
             <li className="footer-item">
@@ -34,7 +38,7 @@ const Footer = () => {
                 className="nav-links"
              
               >
-                Menyu
+                {t('li2')}
               </a>
             </li>
             <li className="footer-item">
@@ -45,7 +49,7 @@ const Footer = () => {
                 className="nav-links"
                
               >
-                To’ya va marosimlar
+                {t('li3')}
               </a>
             </li>
             <li className="footer-item">
@@ -56,7 +60,7 @@ const Footer = () => {
                 className="nav-links"
                
               >
-                Yetkazish
+                {t('li4')}
               </a>
             </li>
           </ul>
@@ -72,11 +76,11 @@ const Footer = () => {
                 </div>
                 <div className='footer__contact__phone'>
                    <img src={location} alt="" />
-                   <p className='footer__contact__phone__text'>Bizning manzil:Toshkent shahar cholonzor metrosi ro’parasi</p>
+                   <p className='footer__contact__phone__text'>{t('h8')}</p>
                 </div>
           </div>
        </div>
-       <p className='creator'>© 2023 PrimeTech. Barcha huquqlar himoyalangan</p>
+       <p className='creator'>{t('creator')}</p>
     </Container>
   )
 }
