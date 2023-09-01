@@ -13,6 +13,20 @@ import './menu.css'
 const Menu = () => {
   const [ratingOne, setRatingOne] = useState(null)
   const [hoverOne, setHoverOne] = useState(null)
+  const [ratingTwo, setRatingTwo] = useState(null)
+  const [hoverTwo, setHoverTwo] = useState(null)
+  const [ratingThree, setRatingThree] = useState(null)
+  const [hoverThree, setHoverThree] = useState(null)
+  const [ratingFour, setRatingFour] = useState(null)
+  const [hoverFour, setHoverFour] = useState(null)
+  const [ratingFive, setRatingFive] = useState(null)
+  const [hoverFive, setHoverFive] = useState(null)
+  const [ratingSix, setRatingSix] = useState(null)
+  const [hoverSix, setHoverSix] = useState(null)
+  const [ratingSeven, setRatingSeven] = useState(null)
+  const [hoverSeven, setHoverSeven] = useState(null)
+  const [ratingEat, setRatingEat] = useState(null)
+  const [hoverEat, setHoverEat] = useState(null)
   return (
     
 <div className="menu__back">
@@ -50,18 +64,18 @@ const Menu = () => {
              <p><span>1kg:</span>75 000 so’m</p>
              <div className="menu__star">
              {[...Array(5)].map((star, index) => {
-              const currentRatingOne = index + 1;
+              const currentRatingTwo = index + 1;
               return (
                 <label >
-                  <input type="radio" name="ratingOne" value={currentRatingOne}
-                    onClick={() => setRatingOne(currentRatingOne)}
+                  <input type="radio" name="ratingOne" value={currentRatingTwo}
+                    onClick={() => setRatingTwo(currentRatingTwo)}
                   />
                   <FaStar
                     className='star'
                     size={30}
-                    color={currentRatingOne <= (hoverOne || ratingOne) ? "#ffc107" : "#e4e5e9"}
-                    onMouseEnter={() => setHoverOne(currentRatingOne)}
-                    onMouseLeave={() => setHoverOne(null)}
+                    color={currentRatingTwo <= (hoverTwo || ratingTwo) ? "#ffc107" : "#e4e5e9"}
+                    onMouseEnter={() => setHoverTwo(currentRatingTwo)}
+                    onMouseLeave={() => setHoverTwo(null)}
                   />
                 </label>
               );
@@ -75,18 +89,18 @@ const Menu = () => {
              <p><span>1kg:</span>50 000 so’m</p>
              <div className="menu__star">
              {[...Array(5)].map((star, index) => {
-              const currentRatingOne = index + 1;
+              const currentRatingThree = index + 1;
               return (
                 <label >
-                  <input type="radio" name="ratingOne" value={currentRatingOne}
-                    onClick={() => setRatingOne(currentRatingOne)}
+                  <input type="radio" name="ratingOne" value={currentRatingThree}
+                    onClick={() => setRatingThree(currentRatingThree)}
                   />
                   <FaStar
                     className='star'
                     size={30}
-                    color={currentRatingOne <= (hoverOne || ratingOne) ? "#ffc107" : "#e4e5e9"}
-                    onMouseEnter={() => setHoverOne(currentRatingOne)}
-                    onMouseLeave={() => setHoverOne(null)}
+                    color={currentRatingThree <= (hoverThree || ratingThree) ? "#ffc107" : "#e4e5e9"}
+                    onMouseEnter={() => setHoverThree(currentRatingThree)}
+                    onMouseLeave={() => setHoverThree(null)}
                   />
                 </label>
               );
@@ -100,18 +114,18 @@ const Menu = () => {
              <p><span>1kg:</span>50 000 so’m</p>
              <div className="menu__star">
              {[...Array(5)].map((star, index) => {
-              const currentRatingOne = index + 1;
+              const currentRatingFour = index + 1;
               return (
                 <label >
-                  <input type="radio" name="ratingOne" value={currentRatingOne}
-                    onClick={() => setRatingOne(currentRatingOne)}
+                  <input type="radio" name="ratingOne" value={currentRatingFour}
+                    onClick={() => setRatingFour(currentRatingFour)}
                   />
                   <FaStar
                     className='star'
                     size={30}
-                    color={currentRatingOne <= (hoverOne || ratingOne) ? "#ffc107" : "#e4e5e9"}
-                    onMouseEnter={() => setHoverOne(currentRatingOne)}
-                    onMouseLeave={() => setHoverOne(null)}
+                    color={currentRatingFour <= (hoverFour || ratingFour) ? "#ffc107" : "#e4e5e9"}
+                    onMouseEnter={() => setHoverFour(currentRatingFour)}
+                    onMouseLeave={() => setHoverFour(null)}
                   />
                 </label>
               );
@@ -125,18 +139,18 @@ const Menu = () => {
              <p><span>1kg:</span>50 000 so’m</p>
              <div className="menu__star">
              {[...Array(5)].map((star, index) => {
-              const currentRatingOne = index + 1;
+              const currentRatingFive = index + 1;
               return (
                 <label >
-                  <input type="radio" name="ratingOne" value={currentRatingOne}
-                    onClick={() => setRatingOne(currentRatingOne)}
+                  <input type="radio" name="ratingOne" value={currentRatingFive}
+                    onClick={() => setRatingFive(currentRatingFive)}
                   />
                   <FaStar
                     className='star'
                     size={30}
-                    color={currentRatingOne <= (hoverOne || ratingOne) ? "#ffc107" : "#e4e5e9"}
-                    onMouseEnter={() => setHoverOne(currentRatingOne)}
-                    onMouseLeave={() => setHoverOne(null)}
+                    color={currentRatingFive <= (hoverFive || ratingFive) ? "#ffc107" : "#e4e5e9"}
+                    onMouseEnter={() => setHoverFive(currentRatingFive)}
+                    onMouseLeave={() => setHoverFive(null)}
                   />
                 </label>
               );
@@ -150,18 +164,18 @@ const Menu = () => {
              <p><span>1kg:</span>50 000 so’m</p>
              <div className="menu__star">
              {[...Array(5)].map((star, index) => {
-              const currentRatingOne = index + 1;
+              const currentRatingSix = index + 1;
               return (
                 <label >
-                  <input type="radio" name="ratingOne" value={currentRatingOne}
-                    onClick={() => setRatingOne(currentRatingOne)}
+                  <input type="radio" name="ratingOne" value={currentRatingSix}
+                    onClick={() => setRatingSix(currentRatingSix)}
                   />
                   <FaStar
                     className='star'
                     size={30}
-                    color={currentRatingOne <= (hoverOne || ratingOne) ? "#ffc107" : "#e4e5e9"}
-                    onMouseEnter={() => setHoverOne(currentRatingOne)}
-                    onMouseLeave={() => setHoverOne(null)}
+                    color={currentRatingSix <= (hoverSix || ratingSix) ? "#ffc107" : "#e4e5e9"}
+                    onMouseEnter={() => setHoverSix(currentRatingSix)}
+                    onMouseLeave={() => setHoverSix(null)}
                   />
                 </label>
               );
@@ -175,18 +189,18 @@ const Menu = () => {
              <p><span>1kg:</span>50 000 so’m</p>
              <div className="menu__star">
              {[...Array(5)].map((star, index) => {
-              const currentRatingOne = index + 1;
+              const currentRatingSeven = index + 1;
               return (
                 <label >
-                  <input type="radio" name="ratingOne" value={currentRatingOne}
-                    onClick={() => setRatingOne(currentRatingOne)}
+                  <input type="radio" name="ratingOne" value={currentRatingSeven}
+                    onClick={() => setRatingSeven(currentRatingSeven)}
                   />
                   <FaStar
                     className='star'
                     size={30}
-                    color={currentRatingOne <= (hoverOne || ratingOne) ? "#ffc107" : "#e4e5e9"}
-                    onMouseEnter={() => setHoverOne(currentRatingOne)}
-                    onMouseLeave={() => setHoverOne(null)}
+                    color={currentRatingSeven <= (hoverSeven || ratingSeven) ? "#ffc107" : "#e4e5e9"}
+                    onMouseEnter={() => setHoverSeven(currentRatingSeven)}
+                    onMouseLeave={() => setHoverSeven(null)}
                   />
                 </label>
               );
@@ -200,18 +214,18 @@ const Menu = () => {
              <p><span>1kg:</span>50 000 so’m</p>
              <div className="menu__star">
              {[...Array(5)].map((star, index) => {
-              const currentRatingOne = index + 1;
+              const currentRatingEat = index + 1;
               return (
                 <label >
-                  <input type="radio" name="ratingOne" value={currentRatingOne}
-                    onClick={() => setRatingOne(currentRatingOne)}
+                  <input type="radio" name="ratingOne" value={currentRatingEat}
+                    onClick={() => setRatingEat(currentRatingEat)}
                   />
                   <FaStar
                     className='star'
                     size={30}
-                    color={currentRatingOne <= (hoverOne || ratingOne) ? "#ffc107" : "#e4e5e9"}
-                    onMouseEnter={() => setHoverOne(currentRatingOne)}
-                    onMouseLeave={() => setHoverOne(null)}
+                    color={currentRatingEat <= (hoverEat || ratingEat) ? "#ffc107" : "#e4e5e9"}
+                    onMouseEnter={() => setHoverEat(currentRatingEat)}
+                    onMouseLeave={() => setHoverEat(null)}
                   />
                 </label>
               );
